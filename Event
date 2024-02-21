@@ -1,0 +1,5 @@
+UG_FP_Comms	LiveData		00:15:00		LiveReport()	15 minute pulse to log Live Data	
+UG_FP_Comms	Day_Pulse	00:00:01	24:00:00		Day_Pulse()	24 Hour Pulse	
+
+
+//two events on for logging one for the shifting values to a new table for historical trending
