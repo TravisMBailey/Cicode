@@ -1,3 +1,6 @@
+For use with AVEVA Plant SCADA
+Cicode
+
 This structure is to log real tag values to a .csv file as specified.
 One event logs the values at specified intervals
 the other transfers the previous 24 hours of data to a new .csv file at the moment storing the previous 4 days of data
