@@ -1,0 +1,26 @@
+FUNCTION LiveReport()
+
+INT hDev = -1
+
+hDev = DevOpen("LiveDataDev")
+
+IF hDev > -1 THEN
+
+		
+		DevAppend(hDev);
+			
+		DevSetField(hDev,"Date",Date(9));
+		DevSetField(hDev,"Time",Time(1));
+		DevSetField(hDev,"REALVAL1",LT01_SILO_PV);
+		DevSetField(hDev,"REALVAL2",LT02_SILO_PV);
+		DevSetField(hDev,"REALVAL3",LT03_SILO_PV);
+		DevSetField(hDev,"REALVAL4",LT04_SILO_PV);
+		DevSetField(hDev,"REALVAL5",LT05_SILO_PV);
+		DevSetField(hDev,"REALVAL6",UGDIE_LIT001_Val_PV);
+		DevClose(hDev,1); // have to close file after edits otherwise when copying it will introduce empty characters and fuck your formatting
+
+	ELSE
+	Prompt ("Cannot Open Device")
+
+END
+END
