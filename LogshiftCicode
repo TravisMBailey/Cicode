@@ -1,0 +1,11 @@
+FUNCTION Day_Pulse() 
+
+FileCopy("C:\ProgramData\AVEVA Plant SCADA 2023\Data\LiveData2.csv","C:\ProgramData\AVEVA Plant SCADA 2023\Data\LiveData3.csv",0);
+Sleep(3);
+FileCopy("C:\ProgramData\AVEVA Plant SCADA 2023\Data\LiveData1.csv","C:\ProgramData\AVEVA Plant SCADA 2023\Data\LiveData2.csv",0);
+Sleep(3);
+FileCopy("C:\ProgramData\AVEVA Plant SCADA 2023\Data\LiveData.csv","C:\ProgramData\AVEVA Plant SCADA 2023\Data\LiveData1.csv",0);
+Sleep(3);
+FileCopy("C:\ProgramData\AVEVA Plant SCADA 2023\Data\LiveDataTemplate.csv","C:\ProgramData\AVEVA Plant SCADA 2023\Data\LiveData.csv",0);
+
+END
